@@ -21,7 +21,359 @@
 
         header {
             width: 100%;
+        }<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUDIPTA PORTFOLIO WEBSITE</title>
+    <style>
+        body {
+            background-color: rgb(15, 63, 119);
+            color: white;
+            font-family: agency fb semibold;
         }
+
+        *,
+        html {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        header {
+            width: 100%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            height: 70px;
+            background-color: rgb(27, 115, 216);
+            align-items: center;
+            padding: 0px 20px;
+
+        }
+
+        .right {
+            display: flex;
+            justify-content: right;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            margin: 0 25px;
+
+        }
+
+        .left {
+            font-size: 30px;
+        }
+
+        @media(max-width: 600px) {
+            .left {
+                font-size: 20px;
+            }
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-between;
+            margin: 25px 0px;
+            align-items: center;
+
+        }
+
+        .firstsection div {
+            width: 100%;
+            text-wrap: wrap;
+            text-align: center;
+        }
+
+        .leftfirstsection {
+            align-items: flex-start;
+            word-spacing: 2px;
+            padding: 5px;
+            display: block;
+            margin: 20px 10px;
+            font-size: 1.6rem;
+        }
+
+        .rightfirstsection {
+            width: 50%;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .rightfirstsection img {
+            width: 70%;
+            height: auto;
+            margin: 20px -20px;
+
+        }
+
+        .leftfirstsection div {
+            display: flex;
+        }
+
+        nav .right ul li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        nav .right ul li a:hover {
+            text-decoration: none;
+            color: blanchedalmond;
+            font-size: larger;
+        }
+
+        .name {
+            color: blanchedalmond;
+            font-size: 2rem;
+        }
+
+        hr {
+
+            height: 0px;
+            margin: 20px 100px;
+        }
+
+        .secondsection {
+            margin: 20px;
+            font-size: 1.8rem;
+            color: white;
+            padding: 10px;
+            ;
+        }
+
+        .graycolor {
+            font-size: 1rem;
+            opacity: 50%;
+        }
+
+        .headingsecondsection {
+            padding: 10px;
+        }
+
+        .table table,
+        th,
+        td {
+            border: 3px solid rgb(27, 115, 216);
+            padding: 10px;
+            align-items: center;
+            align-self: center;
+        }
+
+        .table {
+            align-items: center;
+            overflow-x: auto;
+            width: 100%;
+        }
+
+        .colorblanchalmond {
+            color: blanchedalmond;
+        }
+
+        .headingthirdsection {
+            padding: 10px;
+        }
+
+        .thirdsection {
+            margin: 20px;
+            font-size: 1.8rem;
+            color: white;
+            padding: 10px;
+            ;
+        }
+
+        .mainthirdsection p {
+            font-size: 1.4rem;
+
+        }
+
+        footer {
+            background-color: rgb(27, 115, 216);
+            text-align: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: row;
+                gap: 10px;
+            }
+
+            .firstsection {
+                flex-direction: column;
+            }
+
+            .leftfirstsection {
+                text-align: center;
+                font-size: 1.3rem;
+            }
+
+            .rightfirstsection img {
+                width: 70%;
+            }
+
+            table {
+                font-size: 1rem;
+            }
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <div class="left">Sudipta's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact_me.html">Contact Me</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftfirstsection">
+                Hi, My name is <span class="name">Sudipta.</span>
+                And I'm a passionate<span class="name" id="element">WEB DEVELOPER</span>
+            </div>
+            <div class="rightfirstsection">
+                <img src="dev2.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <div class="headingsecondsection">
+                <div class="graycolor">What I have done so far - </div>
+                <span class="colorblanchalmond">WORK EXPERIENCES :</span>
+            </div>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>
+                            <span class="colorblanchalmond">Date:</span>
+                        </th>
+                        <th>
+                            <span class="colorblanchalmond">Work:</span>
+                        </th>
+                        <th>
+                            <span class="colorblanchalmond">Description:</span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            2020-2022
+                        </td>
+                        <td>
+                            Learning HTML-5 & CSS-3
+                        </td>
+                        <td>
+                            Reading in Class 6 to 8. Started to love <span class="colorblanchalmond"><i>coding
+                                    languages</i></span> and get addicted.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2023-2024
+                        </td>
+                        <td>
+                            Learning C++ Basics
+                        </td>
+                        <td>Reading in Class 9 to 10. Started to face and overcome each <span
+                                class="colorblanchalmond">Challenges</span> and aim for <span
+                                class="colorblanchalmond">Professional Web Developer.</td></span>
+                    </tr>
+                    <tr>
+                        <td>2025-2026</td>
+                        <td>Learning mixtures of coding including Python, Sql, C, Javascript</td>
+                        <td>Reading in Class 11 to 12. Started to build some <span class="colorblanchalmond">Portfolio
+                                websites</span> for myself and others. Started to build some <span
+                                class="colorblanchalmond">E-Commerce Websites.</span></td>
+                    </tr>
+
+                </table>
+            </div>
+        </section>
+        <hr>
+        <section class="thirdsection">
+            <div class="headingthirdsection">
+                <div class="graycolor">
+                    What I am-
+                </div>
+                About Me :
+                <div class="mainthirdsection">
+                    <p>
+                        &emsp;My name is <span class="colorblanchalmond">Sudipta Mondal</span>, a
+                        <span class="colorblanchalmond">Class 11</span> student with a strong
+                        <span class="colorblanchalmond">passion</span> for
+                        <span class="colorblanchalmond">technology</span> and
+                        <span class="colorblanchalmond">software development</span>.
+
+                        I have been motivated to pursue
+                        <span class="colorblanchalmond">Web Development</span> and
+                        <span class="colorblanchalmond">Software Engineering</span> since Class 6 and have continued to
+                        grow my skills over the years.
+
+                        I am proficient in
+                        <span class="colorblanchalmond">HTML</span> and
+                        <span class="colorblanchalmond">CSS</span>, have intermediate experience in
+                        <span class="colorblanchalmond">JavaScript</span>,
+                        <span class="colorblanchalmond">Python</span>,
+                        <span class="colorblanchalmond">C</span>, and
+                        <span class="colorblanchalmond">C++</span>, and hold beginner-level knowledge of
+                        <span class="colorblanchalmond">SQL</span>.
+
+                        My areas of interest include
+                        <span class="colorblanchalmond">Web Development</span>,
+                        <span class="colorblanchalmond">Software Engineering</span>,
+                        <span class="colorblanchalmond">Ethical Hacking</span>, and
+                        <span class="colorblanchalmond">Artificial Intelligence</span> (AI).
+
+                        With a consistent drive to learn and build, my ultimate goal is to become a
+                        <span class="colorblanchalmond">Professional Software Developer</span> capable of creating
+                        impactful and innovative solutions.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        -Sudipta's Portfolio | All Coprright Reserved&copy;
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+    strings: ['<i>Web Developer</i>', '<i>Web Designer.</i>'],
+    typeSpeed: 70,
+});
+</script>
+<script src="theme.js"></script>
+
+</body>
+
+
+</html>
 
         nav {
             display: flex;
@@ -342,5 +694,6 @@
     });
 
 </script>
+
 
 </html>
