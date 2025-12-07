@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUDIPTA PORTFOLIO WEBSITE</title>
+    <style>
+        body {
+            background-color: rgb(15, 63, 119);
+            color: white;
+            font-family: agency fb semibold;
+        }
+
+        *,
+        html {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        header {
+            width: 100%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            height: 70px;
+            background-color: rgb(27, 115, 216);
+            align-items: center;
+            padding: 0px 20px;
+
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            margin: 0 25px;
+
+        }
+         nav .right ul li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        nav .right ul li a:hover {
+            text-decoration: none;
+            color: blanchedalmond;
+            font-size: larger;
+        }
+        .left {
+            font-size: 30px;
+        }
+        .themebox  button{
+            background-color: rgb(27, 115, 216);
+            padding: 2px;
+            color: aliceblue;
+            margin: 10px 5px;
+            
+        }
+        .themebox  button:hover{
+            background-color: rgb(135, 190, 238);
+            padding: 2px 2px;
+            color: blanchedalmond;
+        }
+        .themebox{
+            padding: 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+        <nav>
+            <div class="left">Sudipta's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact_me.html">Contact Me</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="themebox">
+            <h2>Select Background Color Theme :</h2>
+            <button onclick="setTheme('Blue')" class="themebox">Blue Theme</button>
+            <button onclick="setTheme('Dark')" class="themebox">Dark Theme</button>
+        </div>
+        <hr>
+    </main>
+    <script src="theme.js"></script>
+
+</body>
+</html>
