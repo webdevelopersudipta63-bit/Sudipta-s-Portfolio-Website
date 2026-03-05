@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +9,7 @@
         body {
             background-color: rgb(15, 63, 119);
             color: white;
-            font-family: agency fb semibold;
+            font-family:  'Inter', sans-serif;
         }
 
         *,
@@ -35,11 +33,6 @@
 
         }
 
-        .right {
-            display: flex;
-            justify-content: right;
-        }
-
         nav ul {
             display: flex;
             justify-content: center;
@@ -52,8 +45,30 @@
 
         }
 
+        table {
+            font-size: 1rem;
+        }
+
+        footer {
+            background-color: rgb(27, 115, 216);
+            text-align: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            width: 100%;
+        }
+
+        .right {
+            display: flex;
+            justify-content: right;
+        }
+
+
+
         .left {
             font-size: 30px;
+        }
+        .left:hover {
+            opacity: 50%;
         }
 
         @media(max-width: 600px) {
@@ -69,11 +84,19 @@
             align-items: center;
 
         }
+        .firstsection:hover {
+            border: 2px solid blanchedalmond;
+            background-color: black;
+        }
 
         .firstsection div {
             width: 100%;
             text-wrap: wrap;
             text-align: center;
+        }
+        .secondsection:hover {
+            border: 2px solid blanchedalmond;
+            background-color: black;
         }
 
         .leftfirstsection {
@@ -111,13 +134,22 @@
             text-decoration: none;
             color: blanchedalmond;
             font-size: larger;
+            transition: all 0.1s ease-in;
+            border: 2px solid rgb(15, 63, 119);
+            border-radius: 5%;
+            padding: 2px;
+            background-color: rgb(15, 63, 119);
+            opacity: 50%;
         }
 
         .name {
             color: blanchedalmond;
             font-size: 2rem;
         }
-
+        .secondsection:hover {
+            border: 2px solid blanchedalmond;
+            background-color: black;
+        }
         hr {
 
             height: 0px;
@@ -171,19 +203,17 @@
             padding: 10px;
             ;
         }
+        .thirdsection:hover {
+            border: 2px solid blanchedalmond;
+            background-color: black;
+        }
 
         .mainthirdsection p {
             font-size: 1.4rem;
 
         }
 
-        footer {
-            background-color: rgb(27, 115, 216);
-            text-align: center;
-            justify-content: space-between;
-            padding: 10px 20px;
-            width: 100%;
-        }
+
 
         @media (max-width: 600px) {
             nav ul {
@@ -204,11 +234,8 @@
                 width: 70%;
             }
 
-            table {
-                font-size: 1rem;
-            }
+
         }
-        
     </style>
 
 </head>
@@ -225,7 +252,7 @@
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact_me.html">Contact Me</a></li>
                     <li><a href="settings.html">Settings</a></li>
-                    
+
                 </ul>
             </div>
         </nav>
@@ -343,11 +370,11 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-    strings: ['<i>Web Developer</i>', '<i>Web Designer.</i>'],
-    typeSpeed: 70,
-});
-</script>
-<script src="theme.js"></script>
+            strings: ['<i>Web Developer</i>', '<i>Web Designer.</i>'],
+            typeSpeed: 70,
+        });
+    </script>
+    <script src="theme.js"></script>
 
 </body>
 
